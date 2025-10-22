@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="author" content="Timour Jbanov--Emorine">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  
+  <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-100 bg-lighter-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+      <a href="index.html">
+        <div class="w-fit mx-auto text-center pointer-events-none">
+          <h1 class="font-medula font-bold tracking-widest text-4xl md:text-5xl lg:text-6xl">
+            TIMOUR JBANOV--EMORINE
+          </h1>
+          <h2 class="font-glacial font-bold text-2xl md:text-3xl lg:text-4xl"></h2>
+        </div>
+      </a>
+      <div class="relative flex justify-center mt-3 md:absolute md:top-1/3 md:right-8 md:mt-0">
+        <button id="lang-toggle" class="flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-r from-gradient-pink/70 to-gradient-yellow/70 hover:opacity-90 transition-all shadow-md focus:outline-none cursor-pointer" aria-expanded="false" aria-controls="lang-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 0 4.5 4 4.5 9s-2 9-4.5 9m0-18c-2.5 0-4.5 4-4.5 9s2 9 4.5 9m-9-9h18" />
+          </svg>
+        </button>
+        <div id="lang-menu" class="absolute top-14 right-50% bg-white/90 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-gradient-pink/20 opacity-0 scale-95 pointer-events-none transition-all duration-200 ease-out origin-top-right" role="menu" aria-hidden="true">
+          <button data-lang="fr" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">Français</button>
+          <hr>
+          <button data-lang="en" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">English</button>
+        </div>
+      </div>
+
+      <nav class="">
+        <ul class="flex justify-center gap-6 mt-4 mb-3 md:mt-6">
+          <li>
+            <a href="/cv.html" class="font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+              CV
+            </a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+              Portfolio
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-25 max-w-2xl w-full">
+        <a href="/cv.html" class="relative group aspect-square rounded-4xl overflow-hidden shadow-lg cursor-pointer flex items-center justify-center">
+          <img src="/images/cv.png" alt="CV image" class="w-4/5 h-4/5 object-contain transition-transform duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-r from-gradient-pink/50 to-gradient-yellow/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <h3 class="absolute inset-0 flex items-center justify-center font-glacial font-bold text-4xl text-light-pink [text-shadow:_-1px_0_#000,_1px_0_#000,_0_1px_#000,_0_-1px_#000]">
+            CV
+          </h3>
+        </a>
+
+        <a href="/cv.html" class="relative group aspect-square rounded-4xl overflow-hidden shadow-lg cursor-pointer flex items-center justify-center">
+          <img src="/images/portfolio.png" alt="CV image" class="w-4/5 h-4/5 object-contain transition-transform duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-r from-gradient-pink/50 to-gradient-yellow/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <h3 class="absolute inset-0 flex items-center justify-center font-glacial font-bold text-4xl text-light-pink [text-shadow:_-1px_0_#000,_1px_0_#000,_0_1px_#000,_0_-1px_#000]">
+            Portfolio
+          </h3>
+        </a>
+      </div>
+    </main>
+
+    <footer class="relative bg-lighter-pink text-zinc-800 py-8 mt-16 before:absolute before:top-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-yellow before:to-gradient-pink">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-4 items-center">
+        <div class="flex items-center space-x-2">
+          <a href="https://github.com/TimourBussy" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gradient-pink" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 
+                0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
+                1.204.085 1.837 1.236 1.837 1.236 1.07 1.835 2.807 1.305 3.492.997.107-.775.418-1.305.762-1.605-2.665-.3-5.467-1.335-5.467-5.93 
+                0-1.31.468-2.38 1.236-3.22-.123-.303-.535-1.522.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3-.404c1.02.005 
+                2.045.138 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.654.242 2.873.12 3.176.77.84 
+                1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.096.823 2.21 
+                0 1.595-.015 2.88-.015 3.27 0 .32.192.694.8.576C20.565 
+                21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span class="font-glacial font-bold text-lg text-gradient-pink group-hover:underline">
+              TimourBussy
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-zinc-600 text-xs font-glacial select-none">
+        &copy; 2025 Timour Jbanov--Emorine — <span id="copyright"></span>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

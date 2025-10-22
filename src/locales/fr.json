@@ -1,0 +1,32 @@
+{
+    "lang": "fr",
+    "metaDesc": "Site officiel du développeur full-stack Timour Jbanov--Emorine",
+    "profileDesc": "Bonjour, je m'appelle Timour et je suis un développeur full stack, actuellement en formation.",
+    "h2": "Développeur Full Stack",
+    "profile": "Profil",
+    "skills": "Compétences",
+    "hobbies": "Passions",
+    "japan": "Japon",
+    "gaming": "Jeux-vidéo",
+    "programming": "Programmation",
+    "drawing": "Dessin",
+    "singing": "Chant",
+    "experience": "Expérience Professionnelle",
+    "nothing": "Aucune pour le moment, mais je suis ouvert aux offres d'emploi !",
+    "bac": "Baccalauréat Général",
+    "but": "BUT Métiers du Multimédia et de l'Internet",
+    "nameLabel": "Nom",
+    "name": "Ex: Jean-Eudes",
+    "email": "Ex: jeaneudeslebg@sfr.fr",
+    "message": "Votre message...",
+    "send": "Envoyer",
+    "contact": {
+        "success": "Message envoyé avec succès !",
+        "error": "Erreur lors de l'envoi!"
+    },
+    "footer": {
+        "before": "Site réalisé sous ",
+        "after": ", thème créé de A à Z par mes soins."
+    },
+    "copyright": "Tous droits réservés"
+}

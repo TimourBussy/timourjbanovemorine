@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-medula: "Medula One", sans-serif;
+  --font-glacial: 'Glacial Indifference', sans-serif;
+
+  --color-lighter-pink: #fddeda;
+  --color-light-pink: #fbc7bf;
+  --color-gradient-pink: #ff66c4;
+  --color-gradient-yellow: #ffde59;
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease-out;
+  }
+}

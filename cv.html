@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="author" content="Timour Jbanov--Emorine">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-100 bg-lighter-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+      <a href="index.html">
+        <div class="w-fit mx-auto text-center pointer-events-none">
+          <h1 class="font-medula font-bold tracking-widest text-4xl md:text-5xl lg:text-6xl">
+            TIMOUR JBANOV--EMORINE
+          </h1>
+          <h2 class="font-glacial font-bold text-2xl md:text-3xl lg:text-4xl"></h2>
+        </div>
+      </a>
+      <div class="relative flex justify-center mt-3 md:absolute md:top-1/3 md:right-8 md:mt-0">
+        <button id="lang-toggle" class="flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-r from-gradient-pink/70 to-gradient-yellow/70 hover:opacity-90 transition-all shadow-md focus:outline-none cursor-pointer" aria-expanded="false" aria-controls="lang-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 0 4.5 4 4.5 9s-2 9-4.5 9m0-18c-2.5 0-4.5 4-4.5 9s2 9 4.5 9m-9-9h18" />
+          </svg>
+        </button>
+        <div id="lang-menu" class="absolute top-14 right-50% bg-white/90 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-gradient-pink/20 opacity-0 scale-95 pointer-events-none transition-all duration-200 ease-out origin-top-right" role="menu" aria-hidden="true">
+          <button data-lang="fr" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">Français</button>
+          <hr>
+          <button data-lang="en" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">English</button>
+        </div>
+      </div>
+
+      <nav>
+        
+      </nav>
+    </header>
+
+    <main class="flex-grow">
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="profile" class="text-3xl sm:text-5xl font-medula tracking-widest"></h3>
+          </div>
+        </div>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center">
+          <div class="p-[6px] rounded-xl bg-gradient-to-r from-gradient-pink to-gradient-yellow inline-block">
+            <div class="w-65 h-75 rounded-xl overflow-hidden">
+              <img src="/images/timour.jpg" alt="Timour" class="w-full h-full object-cover scale-112" />
+            </div>
+          </div>
+          <div class="sm:w-60 mt-6 sm:mt-0 sm:ml-10 w-full max-w-[90%] text-center sm:text-left">
+            <p id="description" class="font-glacial text-xl leading-[2.125rem]"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="skills" class="text-3xl sm:text-5xl font-medula tracking-widest"></h3>
+          </div>
+        </div>
+        <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+          <h4>HTML/CSS (+Tailwind)</h4>
+          <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+            <div class="w-80/100 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+          </div>
+        </article>
+        <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+          <h4>Javascript</h4>
+          <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+            <div class="w-30/100 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+          </div>
+        </article>
+        <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+          <h4>PHP</h4>
+          <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+            <div class="w-50/100 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="hobbies" class="text-3xl sm:text-5xl font-medula tracking-widest"></h3>
+          </div>
+        </div>
+        <div class="mt-8 flex flex-wrap justify-center mx-auto max-w-5xl gap-x-8 gap-y-4">
+          <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+            <img id="japan" class="w-4/6 h-4/6" src="/images/japan.png" />
+          </article>
+          <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+            <img id="gaming" class="w-4/6 h-4/6" src="/images/gaming.png" />
+          </article>
+          <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+            <img id="programming" class="w-4/6 h-4/6" src="/images/programming.png" />
+          </article>
+          <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+            <img id="drawing" class="w-4/6 h-4/6" src="/images/drawing.png" />
+          </article>
+          <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+            <img id="singing" class="w-4/6 h-4/6" src="/images/singing.png" />
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="experience" class="text-3xl sm:text-5xl font-medula tracking-wide sm:tracking-widest"></h3>
+          </div>
+        </div>
+        <p id="nothing" class="mt-8 font-glacial text-center text-3xl max-w-[460px] mx-auto tracking-tight"></p>
+      </section>
+
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 class="text-3xl sm:text-5xl font-medula tracking-widest">Formations</h3>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col items-center gap-6">
+          <article class="px-12 py-2 bg-lighter-pink rounded-full text-center">
+            <h4 id="bac" class="text-3xl font-glacial font-bold"></h4>
+            <h5 id="lycee" class="text-2xl font-glacial">Lycée Théodore de Banville</h5>
+          </article>
+          <div class="h-28 w-1.75 -mt-4.5 -mb-8 bg-[repeating-linear-gradient(to_bottom,_#ffc1e6,_#ffc1e6_20px,_transparent_20px,_transparent_26px)]"></div>
+          <article class="px-12 py-2 bg-lighter-pink rounded-full text-center">
+            <h4 id="but" class="text-3xl font-glacial font-bold"></h4>
+            <h5 id="uca" class="text-2xl font-glacial">Université Clermont Auvergne</h5>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="text-center mt-12">
+          <div class="inline-block px-10 sm:px-20 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 class="text-3xl sm:text-5xl font-medula tracking-widest">Contact</h3>
+          </div>
+        </div>
+        <form id="contact" class="mt-8 max-w-xl mx-auto bg-lighter-pink rounded-2xl p-8 shadow-xl space-y-6">
+          <div>
+            <label for="name" class="block font-glacial text-xl mb-2"></label>
+            <input type="text" id="name" name="name" required autocomplete="name" class="w-full rounded-lg px-4 py-3 bg-white/80 text-zinc-800 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-gradient-pink" />
+          </div>
+          <div>
+            <label for="email" class="block font-glacial text-xl mb-2">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" class="w-full rounded-lg px-4 py-3 bg-white/80 text-zinc-800 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-gradient-yellow" />
+          </div>
+          <div>
+            <label for="message" class="block font-glacial text-xl mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full rounded-lg px-4 py-3 bg-white/80 text-zinc-800 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-gradient-pink"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" id="send" class="px-8 py-3 rounded-full font-glacial font-bold text-lg text-white bg-gradient-to-r from-gradient-pink to-gradient-yellow hover:opacity-90 transition-all"></button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="relative bg-lighter-pink text-zinc-800 py-8 mt-16 before:absolute before:top-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-yellow before:to-gradient-pink">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-4 items-center">
+        <div class="flex items-center space-x-2">
+          <a href="https://github.com/TimourBussy" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gradient-pink" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 
+                0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
+                1.204.085 1.837 1.236 1.837 1.236 1.07 1.835 2.807 1.305 3.492.997.107-.775.418-1.305.762-1.605-2.665-.3-5.467-1.335-5.467-5.93 
+                0-1.31.468-2.38 1.236-3.22-.123-.303-.535-1.522.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3-.404c1.02.005 
+                2.045.138 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.654.242 2.873.12 3.176.77.84 
+                1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.096.823 2.21 
+                0 1.595-.015 2.88-.015 3.27 0 .32.192.694.8.576C20.565 
+                21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span class="font-glacial font-bold text-lg text-gradient-pink group-hover:underline">
+              TimourBussy
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-zinc-600 text-xs font-glacial select-none">
+        &copy; 2025 Timour Jbanov--Emorine — <span id="copyright"></span>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
