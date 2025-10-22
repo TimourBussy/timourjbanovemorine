@@ -25,7 +25,6 @@ if (langToggle && langMenu) {
     isOpen ? closeMenu() : openMenu();
   });
 
-  // Ferme si on clique sur une option (et on laisse i18n gérer la langue)
   langMenu.addEventListener('click', (e) => {
     const opt = e.target.closest('[data-lang]');
     if (opt) {
@@ -33,14 +32,12 @@ if (langToggle && langMenu) {
     }
   });
 
-  // Clique à l'extérieur -> fermer
   document.addEventListener('click', (e) => {
     if (!langToggle.contains(e.target) && !langMenu.contains(e.target) && isOpen) {
       closeMenu();
     }
   });
 
-  // (optionnel) fermeture avec Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && isOpen) closeMenu();
   });

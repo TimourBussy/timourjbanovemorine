@@ -14,8 +14,8 @@
     <title></title>
   </head>
   
-  <body class="min-h-screen flex flex-col">
-    <header class="sticky top-0 z-100 bg-lighter-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+  <body class="min-h-screen flex flex-col bg-[#f4f1F8]">
+  <header class="relative md:sticky md:top-0 md:z-50 bg-lighter-pink px-4 pt-4 pb-2 md:p-4 md:pb-8">
       <a href="index.html">
         <div class="w-fit mx-auto text-center pointer-events-none">
           <h1 class="font-medula font-bold tracking-widest text-4xl md:text-5xl lg:text-6xl">
@@ -24,34 +24,52 @@
           <h2 class="font-glacial font-bold text-2xl md:text-3xl lg:text-4xl"></h2>
         </div>
       </a>
-      <div class="relative flex justify-center mt-3 md:absolute md:top-1/3 md:right-8 md:mt-0">
-        <button id="lang-toggle" class="flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-r from-gradient-pink/70 to-gradient-yellow/70 hover:opacity-90 transition-all shadow-md focus:outline-none cursor-pointer" aria-expanded="false" aria-controls="lang-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 0 4.5 4 4.5 9s-2 9-4.5 9m0-18c-2.5 0-4.5 4-4.5 9s2 9 4.5 9m-9-9h18" />
-          </svg>
-        </button>
-        <div id="lang-menu" class="absolute top-14 right-50% bg-white/90 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-gradient-pink/20 opacity-0 scale-95 pointer-events-none transition-all duration-200 ease-out origin-top-right" role="menu" aria-hidden="true">
-          <button data-lang="fr" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">Français</button>
-          <hr>
-          <button data-lang="en" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">English</button>
+      <a href="index.html" class="absolute inset-0 z-10 md:hidden" aria-hidden="true"></a>
+        <div class="relative flex justify-center mt-3 md:absolute md:top-1/3 md:right-8 md:mt-0">
+          <button id="lang-toggle" class="relative z-20 flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-r from-gradient-pink/70 to-gradient-yellow/70 hover:opacity-90 transition-all shadow-md focus:outline-none cursor-pointer" aria-expanded="false" aria-controls="lang-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 0 4.5 4 4.5 9s-2 9-4.5 9m0-18c-2.5 0-4.5 4-4.5 9s2 9 4.5 9m-9-9h18" />
+            </svg>
+          </button>
+          <div id="lang-menu" class="z-100 absolute right-50% bg-white/90 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-gradient-pink/20 opacity-0 scale-95 pointer-events-none transition-all duration-200 ease-out origin-top-right" role="menu" aria-hidden="true">
+            <button data-lang="fr" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">Français</button>
+            <hr class="my-0 border-t border-gradient-pink/20">
+            <button data-lang="en" class="block w-full px-5 py-1.5 text-left font-glacial hover:bg-gradient-to-r hover:from-gradient-pink/40 hover:to-gradient-yellow/40 transition-all cursor-pointer">English</button>
+          </div>
         </div>
-      </div>
-
-      <nav class="">
-        <ul class="flex justify-center gap-6 mt-4 mb-3 md:mt-6">
-          <li>
-            <a href="/cv.html" class="font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
-              CV
-            </a>
-          </li>
-          <li>
-            <a href="/portfolio.html" class="font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
-              Portfolio
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="hidden md:block md:relative md:mt-0 md:bg-lighter-pink">
+          <ul class="flex justify-center gap-6 mt-4 mb-3 md:mt-6">
+            <li>
+              <a href="/cv.html" class="relative z-20 font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+                CV
+              </a>
+            </li>
+            <li>
+              <a href="/portfolio.html" class="relative z-20 font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+                Portfolio
+              </a>
+            </li>
+          </ul>
+          <a href="index.html" class="absolute inset-0 z-10" aria-hidden="true"></a>
+        </nav>
+    <div class="hidden md:block absolute left-0 right-0 bottom-0 h-[4px] bg-gradient-to-r from-gradient-pink to-gradient-yellow pointer-events-none"></div>
     </header>
+
+    <nav class="sticky pt-5 top-0 z-50 bg-lighter-pink md:hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+      <ul class="flex justify-center gap-6 mb-6">
+        <li>
+          <a href="/cv.html" class="relative z-20 font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+            CV
+          </a>
+        </li>
+        <li>
+          <a href="/portfolio.html" class="relative z-20 font-glacial font-bold text-lg md:text-xl px-4 py-2 rounded-full bg-gradient-to-r from-gradient-pink/40 to-gradient-yellow/40 hover:from-gradient-pink hover:to-gradient-yellow shadow-md hover:shadow-lg">
+            Portfolio
+          </a>
+        </li>
+      </ul>
+      <a href="index.html" class="absolute inset-0 z-10" aria-hidden="true"></a>
+    </nav>
 
     <main class="flex-grow flex items-center justify-center px-6 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-25 max-w-2xl w-full">
